@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Clamp</title>
+    <style>
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            background-color: darkgrey;
+        }
+        .content {
+            background-color: chartreuse;
+            /* width: 500px; */
+            height: 500px;
+            width: clamp(300px, 50%, 800px);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+        </div>
+    </div>
+</body>
+</html>
